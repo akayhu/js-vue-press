@@ -67,6 +67,7 @@ module.exports = {
   // serviceWorker: true,
   // 部署到github相關的配置
   base: '/js-vue-press/',
+  repo: 'https://akayhu.github.io/js-vue-press/',
   markdown: {
     // 代碼塊顯示行號
     lineNumbers: true
