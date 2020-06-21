@@ -66,7 +66,7 @@ module.exports = {
   // 是否開啟 PWA
   serviceWorker: true,
   // 部署到github相關的配置
-  base: '/',
+  // base: '/',
   markdown: {
     // 代碼塊顯示行號
     lineNumbers: false
