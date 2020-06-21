@@ -2,7 +2,7 @@
 
 > 請依照以下房型資訊，去定義各個變數名稱，變數務必要命名比較語意化且好懂。
 
-<img src="/image/blvfkGI.jpg" width="80%">
+<img src="/js-vue-press/image/blvfkGI.jpg" width="80%">
 
 ::: tip 答：
 以下僅供參考
