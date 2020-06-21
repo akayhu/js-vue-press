@@ -13,4 +13,4 @@ deploy:
   keep_history: true
   on:
     branch: 
-      - gh-pages
+      - master

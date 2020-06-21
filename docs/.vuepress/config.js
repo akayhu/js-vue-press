@@ -61,14 +61,14 @@ module.exports = {
     // sidebar: 'auto',
     // 側邊欄顯示2級
     // sidebarDepth: 2,
-    lastUpdated: 'Last Updated'
+    lastUpdated: '最後更新'
   },
   // 是否開啟 PWA
-  serviceWorker: true,
+  // serviceWorker: true,
   // 部署到github相關的配置
-  // base: '/',
+  base: '/js-vue-press/',
   markdown: {
     // 代碼塊顯示行號
-    lineNumbers: false
+    lineNumbers: true
   }
 };
