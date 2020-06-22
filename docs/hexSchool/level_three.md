@@ -2,7 +2,7 @@
 
 ## 第一題
 
-> 請依序告知以下 console.log 會顯示什麼值。
+請依序告知以下 console.log 會顯示什麼值。
 
 ``` js
 var a = 1;
@@ -60,7 +60,7 @@ console.log(b * "hello");
 第三個 宣告了變數 b 賦予值為數字 3，但是 hello 是字串，數字無法與字串相乘，所以顯示 NaN
 :::
 
-> 補充<br />
+> 補充說明：<br />
 > NaN 全名為「Not a Number」，不是一個數字的意思
 
 ## 第三題
