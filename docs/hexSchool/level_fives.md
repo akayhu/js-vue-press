@@ -4,6 +4,7 @@
 以下變數都不可變更：
 
 ## 第一題 顧客 Bob 向店員詢價
+
 顧客 Bob：「請問我要買 4 個漢堡，30 份薯條，總共多少？」
 
 <img src="https://i.imgur.com/CmHOgT3.png" />
@@ -34,7 +35,7 @@ var bobTotal;
 
 bobTotal = (hamburgerPrice * 4) + (friesPrice * 30);
 
-console.log("Bob 您好，您詢問的金額總計為" + bobTotal + "元");
+console.log("Bob 您好，您詢問的金額總計為" + bobTotal + "元"); // 1400 元
 ```
 缺點是比較不彈性，用函式是比較彈性的用帶入參數方式算出總金額
 :::
@@ -73,7 +74,7 @@ function consumptionTotal(hamburgerNumber, friesNumber) {
 
 markTotal = markWallet - consumptionTotal(1, 3);
 
-console.log("馬克買完東西後，錢包剩下" + markTotal + "元");
+console.log("馬克買完東西後，錢包剩下" + markTotal + "元"); // 30 元
 ```
 :::
 
@@ -103,7 +104,7 @@ function consumptionTotal(hamburgerNumber, friesNumber) {
 
 maryTotal = maryWallet - (consumptionTotal(10, 10) * sale);
 
-console.log("Mary 買完東西後，錢包剩下" + maryTotal + "元");
+console.log("Mary 買完東西後，錢包剩下" + maryTotal + "元"); // 4190 元
 ```
 :::
 
