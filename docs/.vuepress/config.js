@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Akay Hu Javascript blog',
+  title: 'Akay Hu Javascript Notes Blog',
   description: 'Akay Hu的網站',
   // 注入到當前頁面的 HTML <head> 中的標籤
   // head: [
@@ -16,7 +16,8 @@ module.exports = {
     // logo: '/assets/img/logo.png',
     // 導航欄配置
     nav:[
-      {text: '首頁', link: '/' }
+      {text: '首頁', link: '/' },
+      {text: '六角學院', link: 'https://www.hexschool.com/'}
       // {text: '關於我', link: '/'}
     ],
     // 側邊欄配置

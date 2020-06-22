@@ -1,5 +1,5 @@
 <template>
-  <div style="color: red; font-size: 20px;">666 我是 vue</div>
+  <div style="color: red; font-size: 20px;">Hello world</div>
 </template>
 
 <script>
