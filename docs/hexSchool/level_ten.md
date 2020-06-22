@@ -91,7 +91,7 @@ var sale = 0.9;
 var maryWallet = 5000;
 var maryTotal;
 
-// 計算總消費金額函式
+// 函式
 function consumptionTotal(name, wallet, friesNumber, hamburgerNumber) {
   var spendTotal = (hamburgerPrice * hamburgerNumber) + (friesPrice * friesNumber); // 消費錢
   maryTotal = spendTotal * sale; // 剩下的錢 = 消費錢 * 9 折
