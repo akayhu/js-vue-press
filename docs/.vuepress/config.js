@@ -28,6 +28,15 @@ module.exports = {
     // ],
     sidebar: [
       {
+        title: 'Javascript 基礎',
+        collapsable: true,
+        sidebarDepth: 0,
+        children: [
+          ['/basis/surroundings', '環境'],
+          ['/basis/variable', '變數']
+        ]
+      },
+      {
         // 標題
         title: '六角學院 js 學徒特訓班',
         // 可選的, 標題的跳轉鏈接，應為絕對路徑且必須存在
