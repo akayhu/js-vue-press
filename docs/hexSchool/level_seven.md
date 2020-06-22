@@ -40,6 +40,9 @@ var memberPrice = 350;
 var VIPTotal = 200;
 var memberPrice = 350;
 
+// 請透過 if 來設計回覆，如果對方滿足門檻
+// 就回覆 console.log("您好，您有達到 VIP 門檻。這裡給您 VIP 會員卡(遞上")
+
 if (memberPrice >= VIPTotal) {
   console.log("您好，您有達到 VIP 門檻。這裡給您 VIP 會員卡(遞上");
 }
@@ -68,6 +71,10 @@ var friesPrice = 30;
 var VIPTotal = 200;
 var hamburgerPrice = 50;
 var friesPrice = 30;
+
+// 請透過 if else 來去設計對方是否有達到條件，有或沒有都需要回覆對方
+// 如果有，請顯示 console.log("尊敬的客戶您好，您有達到 VIP 條件")
+// 如果沒有達到條件，便用 else 顯示 console.log("尊敬的客戶您好，您還差 xx 元，才有符合 VIP 條件哦~")
 
 // 計算總消費額函式
 function consumptionTotal(hamburgerNumber, friesNumber) {
@@ -100,22 +107,17 @@ if (buyTotal >= VIPTotal) {
 
 工作一整天，小杰累到懷疑人生，累歸累，但還是得吃東西，小杰吃東西有自己的 SOP，來幫幫小杰看看他該吃什麼食物。
 
-小杰都用飢餓度 1~100 來計算，100 就是代表最飢餓，數值皆為整數，不會有小數點
-
-小杰飢餓度 0~20 時，都吃飯糰
-
-小杰飢餓度在 21~40 時，都吃肉燥飯+貢丸湯
-
-小杰飢餓度在 41~60 時，都吃麥當勞
-
-小杰飢餓度在 61~100 時，都吃 99 元火鍋吃到飽
-
+小杰都用飢餓度 1~100 來計算，100 就是代表最飢餓，數值皆為整數，不會有小數點<br />
+小杰飢餓度 0~20 時，都吃飯糰<br />
+小杰飢餓度在 21~40 時，都吃肉燥飯+貢丸湯<br />
+小杰飢餓度在 41~60 時，都吃麥當勞<br />
+小杰飢餓度在 61~100 時，都吃 99 元火鍋吃到飽<br />
 今天小杰的飢餓度是 53，請引導小杰去指定地點用餐
 
 ``` js
 var hungryNum = 53;
 
-if(條件式){
+if (條件式) {
   console.log();
 }else if{
   console.log();
@@ -138,6 +140,9 @@ if (hungryNum > 60) {
 } else if (hungryNum >= 0) {
   console.log(`主人公因為飢餓度在${hungryNum}，所以他決定去吃飯糰`);
 }
+
+// 請用 if、else if 去判斷主人公該吃什麼
+// 各區塊回覆內容請顯示 console.log("主人公因為飢餓度在"+hungryNum+"，所以他決定去吃麥當勞")
 ```
 :::
 

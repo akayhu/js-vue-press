@@ -24,6 +24,10 @@ var hamburgerPrice = 50;
 var friesPrice = 30;
 var isVIP;
 
+// 請透過比較運算子，將比較結果寫在 isVip 上
+// 請利用 VIPTotal、hamburgerPrice、friesPrice 的變數進行比較
+// isVIP 的型別必須為布林值 (true or false)
+
 // 計算總消費額函式
 function consumptionTotal(hamburgerNumber, friesNumber) {
   return (hamburgerPrice * hamburgerNumber) + (friesPrice * friesNumber);

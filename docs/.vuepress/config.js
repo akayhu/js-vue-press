@@ -35,7 +35,7 @@ module.exports = {
         // 可選的, 是否可展開，默認值是 true
         collapsable: true,
         // 可選的, 默認值是 1
-        sidebarDepth: 10,
+        sidebarDepth: 0,
         children: [
           ['/hexSchool/level_one', '第一關：JS 環境與變數環境'],
           ['/hexSchool/level_two', '第二關：變數命名'],
@@ -49,7 +49,8 @@ module.exports = {
           ['/hexSchool/level_ten', '第十關：函式參數設計'],
           ['/hexSchool/level_eleven', '第十一關：函式參數再練習'],
           ['/hexSchool/level_twelve', '第十二關：DOM 操作'],
-          ['/hexSchool/level_thirteen', '第十三關：函式 + if 判斷']
+          ['/hexSchool/level_thirteen', '第十三關：函式 + if 判斷'],
+          ['/hexSchool/level_fourteen', '第十四關：監聽與函式設計']
         ]
       },
       // {
