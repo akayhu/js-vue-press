@@ -34,7 +34,7 @@ module.exports = {
         children: [
           ['/basis/surroundings', 'JS 環境'],
           ['/basis/variable', 'JS 型別與變數'],
-          ['/basis/function', 'JS 函式'],
+          ['/basis/function', 'JS DOM 與 函式'],
           ['/basis/monitor', 'JS 監聽'],
           ['/basis/array', 'JS 陣列'],
           ['/basis/object', 'JS 物件'],
