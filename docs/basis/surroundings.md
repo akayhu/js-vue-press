@@ -30,7 +30,28 @@ all.js 內容打上
 alert("Hello World");
 ```
 
-開啟網頁就會彈出 `Hello World` 視窗，有出現視就窗代表已載入 js 環境
+開啟網頁就會彈出 `Hello World` 視窗，有出現視就窗代表已載入 js 環境。
+
+當然也可以直接寫在 Html 裡面，寫法如下：
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    alert("Hello World");
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+寫在 `<head>` 標籤裡面或是 `<body>` 標籤裡面都可以！
 
 ## Javascript 主要目的
 

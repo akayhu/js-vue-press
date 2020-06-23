@@ -32,8 +32,13 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 0,
         children: [
-          ['/basis/surroundings', '環境'],
-          ['/basis/variable', '變數']
+          ['/basis/surroundings', 'JS 環境'],
+          ['/basis/variable', 'JS 型別與變數'],
+          ['/basis/function', 'JS 函式'],
+          ['/basis/monitor', 'JS 監聽'],
+          ['/basis/array', 'JS 陣列'],
+          ['/basis/object', 'JS 物件'],
+          ['/basis/forEach', 'JS forEach']
         ]
       },
       {
@@ -59,7 +64,8 @@ module.exports = {
           ['/hexSchool/level_eleven', '第十一關：函式參數再練習'],
           ['/hexSchool/level_twelve', '第十二關：DOM 操作'],
           ['/hexSchool/level_thirteen', '第十三關：函式 + if 判斷'],
-          ['/hexSchool/level_fourteen', '第十四關：監聽與函式設計']
+          ['/hexSchool/level_fourteen', '第十四關：監聽與函式設計'],
+          ['/hexSchool/level_fifteen', '第十五關：物件運用 - 資料與渲染分離']
         ]
       },
       // {
