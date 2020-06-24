@@ -24,7 +24,7 @@ var h = 3;
 console.log(typeof(f + g + h));
 ```
 
-::: tip 答：
+::: tip 參考解答：
 1. console.log(a + b) 顯示為 12
 2. console.log(c * d) 顯示為 NaN
 3. console.log(e) 顯示為 26
@@ -59,7 +59,7 @@ console.log(c == 10 || d >= 5 || e !== 20);
 console.log(c == 5 || d >= 40 || e !== 30);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 1. console.log(total >= 200 && isVip) 顯示為 true
 2. console.log(a && b) 顯示為 false
 3. console.log(a || b) 顯示為 true
@@ -112,7 +112,7 @@ if (momSwim && girlfriendSwim){
 }
 ```
 
-::: tip 答：
+::: tip 參考解答：
 判斷依順序顯示為 `哇貴婦餒！` -> `小杰大喊：「你們誰不會游泳啊？？」` -> `那你自己游上來！` -> `媽我去救你！`
 :::
 

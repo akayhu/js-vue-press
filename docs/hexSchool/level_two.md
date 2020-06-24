@@ -4,7 +4,7 @@
 
 <img src="/js-vue-press/image/blvfkGI.jpg" width="80%">
 
-::: tip 答：
+::: tip 參考解答：
 以下僅供參考
 ``` js
 var roomName = "Single"; // 房間名 = 單人房

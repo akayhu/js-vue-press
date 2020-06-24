@@ -17,7 +17,7 @@
 
 <img src="https://i.imgur.com/a6AipOO.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var VIPTotal = 200;
 var hamburgerPrice = 50;
@@ -59,7 +59,7 @@ console.log("Bob 的 VIP 條件為" + isVIP); // false
 
 <img src="https://i.imgur.com/gYYAIz8.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 // 此變數不可更改
 var VIPTotal = 200;
@@ -125,7 +125,7 @@ Mary 說：「老闆我好歹是忠實老客戶欸，我買了你八年的薯條
 
 <img src="https://i.imgur.com/xqK3dXz.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var VIPTotal = 200;
 var hamburgerPrice = 50;

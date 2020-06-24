@@ -25,7 +25,7 @@
 
 <img src="https://i.imgur.com/LwAK0KL.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var salary = 23500;
 
@@ -54,7 +54,7 @@ salary = salary - 1000;
 
 <img src="https://i.imgur.com/8Y4pkef.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var giftNum = 3;     // 贈品數量
 var customerA = 150; // 顧客 A 消費金額
@@ -87,7 +87,7 @@ console.log("目前贈品剩下" + giftNum + "個"); // 剩 2 個
 
 <img src="https://i.imgur.com/SjYPwbj.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var giftNum = 50; // 贈品數量
 var friesPrice = 30; // 薯條單價

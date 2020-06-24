@@ -11,7 +11,7 @@ a = "hello";
 console.log(a);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 1. console.log(a) 印出來的值會是 hello
 2. 1個變數、2個型別、3個記憶體物件
 :::
@@ -38,7 +38,7 @@ var d = b + c;
 console.log(d);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 1. 第 1 個 console.log(d) 印出來的值會是 undefined<br />
    第 2 個 console.log(d) 印出來的值會是 7
 2. 3 個變數、1 個型別、6 個記憶體物件
@@ -71,7 +71,7 @@ e = true;
 console.log(e);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 1. 第 1 個 console.log(e) 印出來的值會是 undefined<br />
    第 2 個 console.log(e) 印出來的值會是 true
 2. 1 個變數、3 個型別、4 個記憶體物件

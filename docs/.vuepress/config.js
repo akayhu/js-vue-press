@@ -65,7 +65,8 @@ module.exports = {
           ['/hexSchool/level_twelve', '第十二關：DOM 操作'],
           ['/hexSchool/level_thirteen', '第十三關：函式 + if 判斷'],
           ['/hexSchool/level_fourteen', '第十四關：監聽與函式設計'],
-          ['/hexSchool/level_fifteen', '第十五關：物件運用 - 資料與渲染分離']
+          ['/hexSchool/level_fifteen', '第十五關：物件運用 - 資料與渲染分離'],
+          ['/hexSchool/level_sixteen', '第十六關：forEach 與 HTML 字串累加']
         ]
       },
       // {

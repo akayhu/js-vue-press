@@ -20,7 +20,7 @@ console.log(f != e);
 console.log(f == e);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 第一個 console.log 為 true<br />
 第二個 console.log 為 true<br />
 第三個 console.log 為 false<br />
@@ -57,7 +57,7 @@ var d = "5";
 console.log((c * d) >= 5);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 第一個 console.log 為 true<br />
 第二個 console.log 為 true<br />
 第三個 console.log 為 true
@@ -83,7 +83,7 @@ console.log(a === b);
 console.log(a !== b);
 ```
 
-::: tip 答：
+::: tip 參考解答：
 第一個 console.log 為 true<br />
 第二個 console.log 為 true<br />
 第三個 console.log 為 false<br />

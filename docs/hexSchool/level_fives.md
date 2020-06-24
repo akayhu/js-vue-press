@@ -9,7 +9,7 @@
 
 <img src="https://i.imgur.com/CmHOgT3.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var hamburgerPrice = 50;
 var friesPrice = 40;
@@ -60,7 +60,7 @@ mark 錢包裡有 200 元，買了一個漢堡，三個薯條，他還剩下多�
 
 <img src="https://i.imgur.com/dHRMz5v.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var hamburgerPrice = 50;
 var friesPrice = 40;
@@ -89,7 +89,7 @@ console.log("馬克買完東西後，錢包剩下" + markTotal + "元"); // 30 �
 
 <img src="https://i.imgur.com/su5ZNi5.png" />
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var hamburgerPrice = 50;
 var friesPrice = 40;

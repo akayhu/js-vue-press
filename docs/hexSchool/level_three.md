@@ -19,7 +19,7 @@ console.log(d);
 console.log(typeof(d));
 ```
 
-::: tip 答：
+::: tip 參考解答：
 第一個 console.log 顯示為 number<br />
 第二個 console.log 顯示為 string<br />
 第三個 console.log 顯示為 string<br />
@@ -49,7 +49,7 @@ var b = 3;
 console.log(b * "hello");
 ```
 
-::: tip 答：
+::: tip 參考解答：
 第一個 console.log 顯示為 undefinedhello<br />
 第二個 console.log 顯示為 string<br />
 第三個 console.log 顯示為 NaN
@@ -75,7 +75,7 @@ console.log(b * b);
 console.log(typeof(b * b));
 ```
 
-::: tip 答：
+::: tip 參考解答：
 第一個 console.log 顯示為 18 (數字)<br />
 第二個 console.log 顯示為 99 (字串)<br />
 第三個 console.log 顯示為 81 (數字)<br />

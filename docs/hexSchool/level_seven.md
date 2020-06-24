@@ -35,7 +35,7 @@ var memberPrice = 350;
 // 就回覆 console.log("您好，您有達到 VIP 門檻。這裡給您 VIP 會員卡(遞上")
 ```
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var VIPTotal = 200;
 var memberPrice = 350;
@@ -66,7 +66,7 @@ var friesPrice = 30;
 // 如果沒有達到條件，便用 else 顯示 console.log("尊敬的客戶您好，您還差 xx 元，才有符合 VIP 條件哦~")
 ```
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var VIPTotal = 200;
 var hamburgerPrice = 50;
@@ -127,7 +127,7 @@ if (條件式) {
 // 各區塊回覆內容請顯示 console.log("主人公因為飢餓度在"+hungryNum+"，所以他決定去吃麥當勞")
 ```
 
-::: tip 答：
+::: tip 參考解答：
 ``` js
 var hungryNum = 53;
 
