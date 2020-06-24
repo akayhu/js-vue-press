@@ -29,7 +29,7 @@
 ``` js
 var list = document.querySelector(".list");
 var data = [];
-var uiContent = "";
+var ulContent = "";
 
 data.push(
   {
@@ -71,9 +71,9 @@ data.push(
 
 data.forEach(item => {
   var content = `<li>${item.name}你的身高為 ${item.height} 公分，體重是 ${item.weight} 公斤，BMI 數據為 ${item.bmi}，狀態為${item.status}`;
-  uiContent += content;
+  ulContent += content;
 });
 
-list.innerHTML = uiContent;
+list.innerHTML = ulContent;
 ```
 :::
