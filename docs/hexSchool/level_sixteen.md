@@ -36,42 +36,41 @@ data.push(
     name: "廖洧杰",
     height: 178,
     weight: 70,
-    BMI: 22,
+    bmi: 22,
     status: "正常"
   },
   {
     name: "小乖",
     height: 120,
     weight: 70,
-    BMI: 48,
+    bmi: 48,
     status: "重度肥胖"
   },
   {
     name: "小麗",
     height: 140,
     weight: 70,
-    BMI: 35,
+    bmi: 35,
     status: "重度肥胖"
   },
   {
     name: "小新",
     height: 80,
     weight: 70,
-    BMI: 109,
+    bmi: 109,
     status: "重度肥胖"
   },
   {
     name: "小華",
     height: 50,
     weight: 70,
-    BMI: 280,
+    bmi: 280,
     status: "重度肥胖"
   }
 );
 
 data.forEach(item => {
-  var content = 
-    `<li>${item.name}你的身高是${item.height} 你的身高是BMI是${item.BMI} 狀態是${item.status}`;
+  var content = `<li>${item.name}你的身高為 ${item.height} 公分，體重是 ${item.weight} 公斤，BMI 數據為 ${item.bmi}，狀態為${item.status}`;
   uiContent += content;
 });
 
