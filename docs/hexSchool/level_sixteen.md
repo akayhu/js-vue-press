@@ -22,5 +22,59 @@
 後面幾關，我們再來逐步將第十五關的監聽事件來整合
 
 ::: tip 參考解答：
-待補上
+``` html
+<ul class="list"></ul>
+```
+
+``` js
+var list = document.querySelector(".list");
+var data = [];
+var uiContent = "";
+
+data.push(
+  {
+    name: "廖洧杰",
+    height: 178,
+    weight: 70,
+    BMI: 22,
+    status: "正常"
+  },
+  {
+    name: "小乖",
+    height: 120,
+    weight: 70,
+    BMI: 48,
+    status: "重度肥胖"
+  },
+  {
+    name: "小麗",
+    height: 140,
+    weight: 70,
+    BMI: 35,
+    status: "重度肥胖"
+  },
+  {
+    name: "小新",
+    height: 80,
+    weight: 70,
+    BMI: 109,
+    status: "重度肥胖"
+  },
+  {
+    name: "小華",
+    height: 50,
+    weight: 70,
+    BMI: 280,
+    status: "重度肥胖"
+  }
+);
+
+data.forEach(item => {
+  var content = 
+    `<li>${item.name}你的身高是${item.height} 你的身高是BMI是${item.BMI} 狀態是${item.status}`;
+  uiContent += content;
+});
+
+list.innerHTML = uiContent;
+```
 :::

@@ -35,20 +35,22 @@ a {
 
 ## 如何用 js 去抓到 DOM 標籤
 
-上圖所示，最上面的結構叫 `document`，假設我要抓 document 裡面的 `<head>` 該如何抓呢？
+上圖所示，最上面的結構叫 `document`，假設我要抓 document 裡面的 `<body>` 該如何抓呢？
 
 寫法如下：
 
 ``` html
-<head class="header">內容</head>
+<body class="body">內容</body>
 ```
 
 ``` js
-document.querySelector(".header").textContent = "我抓到 head 了";
+document.querySelector(".body").textContent = "我抓到 body 了";
 
-// 選取該網頁文件，找到裡面的 .header，新增文字，賦予它叫做我抓到 head 了
+// 選取該網頁文件，找到裡面的 .body body 了
 // 也可解讀成
-// 選取該網頁文件.找到裡面的(".header").新增文字 = 我抓到 head 了
+// 選取該網頁文件.找到裡面的(".body").新增文字 = 我抓到 body 了
 ```
 
-中間需要有一個點(.)，代表要抓裡面的東西，裡面有一個功能叫 `querySelector`，我要選取它它叫 `.header`，選取到後在賦予它文字為`我抓到 head 了`
+中間需要有一個點(.)，代表要抓裡面的東西，裡面有一個功能叫 `querySelector`，我要選取它它叫 `.body`，選取到後在賦予它文字為`我抓到 body 了`
+
+Math.pow(7, 2);

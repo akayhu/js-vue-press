@@ -89,6 +89,8 @@ module.exports = {
       //   children: [ /* ... */ ]
       // }
     ],
+    // 頁面滾動
+    smoothScroll: true,
     // 顯示所有頁面的標題鏈接
     displayAllHeaders: true,
     // sidebar: 'auto',
