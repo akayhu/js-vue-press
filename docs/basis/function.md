@@ -33,24 +33,108 @@ a {
 
 所以網頁一定會產生 DOM，程式才方便選取到標籤
 
-## 如何用 js 去抓到 DOM 標籤
+## 如何選取 DOM？
 
 上圖所示，最上面的結構叫 `document`，假設我要抓 document 裡面的 `<body>` 該如何抓呢？
 
 寫法如下：
 
 ``` html
-<body class="body">內容</body>
+<div id="idContent" class="content">內容</div>
 ```
 
 ``` js
-document.querySelector(".body").textContent = "我抓到 body 了";
+// 選取網頁文件，裡面的 .content 的 DOM
+document.querySelector(".content"); // 取 class
+document.querySelector("#idContent"); // 取 id
 
-// 選取該網頁文件，找到裡面的 .body body 了
-// 也可解讀成
-// 選取該網頁文件.找到裡面的(".body").新增文字 = 我抓到 body 了
+// 修改文字節點
+document.querySelector(".content").textContent = "hello";
+document.querySelector("#idContent").textContent = "hello"
+
+// 以下前面的 document.querySelector("選擇器") 都簡稱 element;
+var element = document.querySelector(".element");
+
+// 新增刪除切換 class 名稱
+element.classList.add('active');
+element.classList.remove('active');
+element.classList.toggle('active');
+
+// 增加屬性
+element.setAttribute("alt", "這是一張圖片"); // 新增一個 alt 屬性
+
+// 取得文字節點
+var str = element.textContent;
+
+// 取得 HTML 結構
+var HTMLContent = element.innerHTML;
+
+// 取得 input 裡面的 value
+var str = element.value;
+
+// 賦予值
+element.textContent = "hello";
+element.innerHTML = "<p>一個段落</p>";
+
+// 變更 CSS 設計
+element.style.background = "#000";
 ```
 
-中間需要有一個點(.)，代表要抓裡面的東西，裡面有一個功能叫 `querySelector`，我要選取它它叫 `.body`，選取到後在賦予它文字為`我抓到 body 了`
+::: tip 提醒
+value 裡面的內容是字串，要把它變成數字，請用 [parseInt()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/parseInt) 轉成數字型別
+:::
 
-Math.pow(7, 2);
+## 函式 function
+
+所謂函示就是可以處理很多指令的意思，像是要新增好多個變數去計算，就可以用函示去解決
+
+::: warning 名言：
+程式語言被發明，為了解決人工重複性的工作
+:::
+
+一般寫法
+
+``` js
+// 命名一個函式名稱，叫做 sum
+// 裡面有一個參數(arguments)，叫做 number
+function sum(number) {
+  return number + number;
+}
+
+sum(10); // 10 + 10 = 20
+sum(20); // 20 + 20 = 40
+sum(30); // 30 + 30 = 60
+```
+
+ES6 寫法
+
+``` js
+var sum = (number => {
+  return number + number;
+});
+
+sum(10); // 10 + 10 = 20
+sum(20); // 20 + 20 = 40
+sum(30); // 30 + 30 = 60
+```
+
+也可以不用下參數，下指令，寫法如下：
+
+``` js
+// 命名一個函式名稱，叫做 sum
+function sum() {
+  console.log("沒有參數");
+}
+
+sum(); // 顯示 沒有參數
+```
+
+ES6 寫法
+
+``` js
+var sum = () => {
+  console.log("沒有參數");
+};
+
+sum(); // 顯示 沒有參數
+```
