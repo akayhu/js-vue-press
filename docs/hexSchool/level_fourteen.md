@@ -43,9 +43,12 @@ function calculateBMI() {
     return;
   }
 
-  BMI.textContent = (
-    Number(weight.value) / Math.pow(Number(height.value) / 100, 2)
-  ).toFixed(1);
+  // textContent 方法請見說明
+  // Math.pow() 方法請見說明
+  // toFixed() 方法請見說明
+  BMI.textContent = ( 
+    Number(weight.value) / Math.pow(Number(height.value) / 100, 2)  
+  ).toFixed(1); 
 
   var BMIResult = Number(BMI.textContent);
 
