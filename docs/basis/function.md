@@ -138,3 +138,25 @@ var sum = () => {
 
 sum(); // 顯示 沒有參數
 ```
+
+## 參數
+
+哪些內容是會變來變去的，內容會變的就用參數
+
+``` js
+var hamburgerPrice = 50;
+var friesPrice = 40;
+var bobTotal;
+
+function sum(myName, friesNum, hamburgerNum) {
+  bobTotal = friesNum * friesPrice + hamburgerNum + friesPrice;
+  return `${myName} 花了 ${bobTotal} 元`;
+}
+
+sum("Bob", 4, 5); // 顯示 Bob 花了 205 元
+```
+## 練習題目
+
+[第五關：變數實作情境題](/hexSchool/level_fives.html)<br />
+[第六關：邏輯運算子](/hexSchool/level_six.html)<br />
+[第七關：if](/hexSchool/level_seven.html)
