@@ -12,12 +12,12 @@ removeEventListener() 的三個參數與 addEventListener() 一樣，分別是�
 
 ``` js
 // 選取一個 DOM，註冊監聽，當它被點擊時，就執行 function
-document.querySelect('.send').addEventListener("click", function() {
+document.querySelector('.send').addEventListener("click", function() {
   alert("hello");
 }, false);
 
 // 取消監聽
-document.querySelect('.send').removeEventListener("click", function() {
+document.querySelector('.send').removeEventListener("click", function() {
   alert("hello");
 }, false);
 ```
