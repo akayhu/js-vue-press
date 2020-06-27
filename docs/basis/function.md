@@ -109,9 +109,9 @@ sum(30); // 30 + 30 = 60
 ES6 寫法
 
 ``` js
-var sum = (number => {
+var sum = number => {
   return number + number;
-});
+};
 
 sum(10); // 10 + 10 = 20
 sum(20); // 20 + 20 = 40

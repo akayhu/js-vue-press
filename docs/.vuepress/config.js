@@ -53,7 +53,8 @@ module.exports = {
           ['/basis/monitor', 'JS 監聽'],
           ['/basis/array', 'JS 陣列'],
           ['/basis/object', 'JS 物件'],
-          ['/basis/forEach', 'JS forEach']
+          ['/basis/forEach', 'JS forEach'],
+          ['/basis/api', 'JS API']
         ]
       },
       {
