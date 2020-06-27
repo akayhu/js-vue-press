@@ -47,9 +47,3 @@ document.querySelector('.send').removeEventListener("click", function() {
 | onselect | 文本被選中      |
 | onsubmit | 確認按鈕被點擊      |
 | onunload | 用戶退出頁面     |
-
-
-## 在 HTML 加上事件屬性
-``` html
-<div onclick="func()">區塊點擊</div>
-```
