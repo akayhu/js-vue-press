@@ -59,7 +59,7 @@ module.exports = {
       },
       {
         // 標題
-        title: '六角學院 js 學徒特訓班',
+        title: '六角學院 js 學徒特訓班試題',
         // 可選的, 標題的跳轉鏈接，應為絕對路徑且必須存在
         // path: '/foo/',
         // 可選的, 是否可展開，默認值是 true
@@ -87,6 +87,16 @@ module.exports = {
           ['/hexSchool/level_eighteen', '第十八關：字串相加 innerHTML + 樣式搭配']
         ]
       },
+      {
+        title: '工具、套件',
+        collapsable: true,
+        sidebarDepth: 0,
+        children: [
+          ['/toolKit/vscode', '程式碼編輯器： VSCode'],
+          ['/toolKit/slack', '團隊溝通平台：Slack'],
+          ['/toolKit/travis', '自動化上傳部署：Travis CI']
+        ]
+      }
       // {
       //   title: 'Group 2',
       //   children: [ /* ... */ ]
