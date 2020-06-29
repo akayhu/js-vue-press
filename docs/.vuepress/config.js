@@ -79,7 +79,8 @@ module.exports = {
           ['/basis/array', 'JS 陣列'],
           ['/basis/object', 'JS 物件'],
           ['/basis/forEach', 'JS forEach'],
-          ['/basis/api', 'JS API']
+          ['/basis/ajax', 'JS AJAX 與資料處理'],
+          ['/basis/axios', 'JS Axios 訪問 API']
         ]
       },
       {
