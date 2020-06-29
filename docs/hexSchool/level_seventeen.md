@@ -12,7 +12,7 @@
 
 <img src="https://i.imgur.com/gjDmrIJ.png" />
 
-::: tip 參考 Erica 解答：
+::: tip 參考解答：
 1. 放在 forEach 外面：只要宣告一次，先準備好位置，執行的時候把結果加上去就可以了<br />
 放在 forEach 裡面：每次都要重新宣告一次 str，每次都會被清空，所以只會顯示最後一筆資料
 
@@ -36,7 +36,8 @@ data.forEach(function(item, index) {
 ``` js
 data.forEach(function(item, index) {
   str += `${index}`;
-})
+});
+
 list.innerHTML = str;
 console.log(list);
 ```

@@ -14,9 +14,9 @@ HTML 標籤寫好，JS 完全沒寫，<br />
 [複製題目](https://codepen.io/liao/pen/KKVWgpv)
 
 ``` html
-<input type="text" class="height" placeholder="請輸入您的身高(公分)">
-<input type="text" class="kg" placeholder="請輸入您的體重(公斤)">
-<input type="button" class="send" value="計算">
+<input type="text" class="height" placeholder="請輸入您的身高(公分)" />
+<input type="text" class="kg" placeholder="請輸入您的體重(公斤)" />
+<input type="button" class="send" value="計算" />
 <p class="total">您的 BMI 指數為 
   <span class="BMI">22</span>，
   狀態是 <span class="status">正常</span>

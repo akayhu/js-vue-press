@@ -91,7 +91,7 @@ checkConsumption(customerC); // 目前贈品剩下1個
 
 [複製題目](https://codepen.io/liao/pen/rNxxXMM)
 
-<img src="https://i.imgur.com/76390tl.png" >
+<img src="https://i.imgur.com/76390tl.png" />
 
 ::: tip 參考解答：
 ``` js

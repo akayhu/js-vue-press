@@ -1,12 +1,7 @@
 # 第八關：if 與指派運算子
 
-老闆：「我現在決定要送客戶贈品，你現在立馬新增一個贈品變數到 Chrome console，紀錄目前只剩下 3 個贈品名額，以免你忘記！」<br />
-小杰：「蛤？？太少了吧！」<br />
-老闆：「你別管那麼多，少了我會再補給你！」<br />
-小杰：「但是我只會針對變數賦予值進去，要怎麼把既有變數來做加減，再重新賦予啊？」<br />
-老闆：「我早知道你會問這問題，這本[武功秘笈](https://codepen.io/liao/pen/QWyyMRG?editors=0011)拿去看下！(遞上」
-
 ## 教學文件
+* [武功秘笈](https://codepen.io/liao/pen/QWyyMRG?editors=0011)
 * [MDN 指派運算子](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_Operators#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90)
 * [重新認識 JavaScript: Day 08 Boolean 的真假判斷](https://ithelp.ithome.com.tw/articles/10191343)
 

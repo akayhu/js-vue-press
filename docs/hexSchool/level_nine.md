@@ -93,7 +93,7 @@ if (maryIsVIP) {
 var momSwim = false;
 var girlfriendSwim = true;
 
-if (momSwim && girlfriendSwim){
+if (momSwim && girlfriendSwim) {
   console.log("都不救，因為他們都會游泳");
 } else {
   console.log("小杰大喊：「你們誰不會游泳啊？？」");
