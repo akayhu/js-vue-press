@@ -94,7 +94,8 @@ module.exports = {
         children: [
           ['/toolKit/vscode', '程式碼編輯器： VSCode'],
           ['/toolKit/slack', '團隊溝通平台：Slack'],
-          ['/toolKit/travis', '自動化上傳部署：Travis CI']
+          ['/toolKit/travis', '自動化上傳部署：Travis CI'],
+          ['/toolKit/liveServer', '開發本地服務器：Live Server']
         ]
       }
       // {
