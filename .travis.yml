@@ -21,3 +21,7 @@ deploy:
 
 notifications:
   slack: akayhuselfslack:d4w5bX0nSyvQr3SVkMxCLeXB
+  template:
+    - Deploy %{result} of %{repository}@%{branch} by %{author}
+    - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) in %{duration}
+    - 'Commit message : %{commit_message}'
