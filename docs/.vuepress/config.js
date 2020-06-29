@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Akay Hu Javascript Notes Blog',
-  description: 'Akay Hu的網站',
+  title: 'Akay Hu Javascript 筆記部落格',
+  description: 'Akay Hu 的 Javascript 筆記部落格',
   // 注入到當前頁面的 HTML <head> 中的標籤
   // head: [
   //   ['link', { rel: 'manifest', href: '/photo.jpg' }],
@@ -11,21 +11,51 @@ module.exports = {
   //   '/': { lang: 'en-US'},
   //   '/zh/': { lang: 'zh-CN'}
   // },
-  plugins: {
-    'seo': {
-      siteTitle: (_, $site) => $site.title,
-      title: $page => $page.title,
-      description: $page => $page.frontmatter.description,
-      author: (_, $site) => $site.themeConfig.author,
-      tags: $page => $page.frontmatter.tags,
-      twitterCard: _ => 'summary_large_image',
-      type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
-      url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
-      image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
-      publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
-      modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
-    }
-  },
+  plugins: [
+    [
+      'seo',
+      {
+        siteTitle: (_, $site) => $site.title,
+        title: $page => $page.title,
+        description: $page => $page.frontmatter.description,
+        author: (_, $site) => $site.themeConfig.author,
+        tags: $page => $page.frontmatter.tags,
+        twitterCard: _ => 'summary_large_image',
+        type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+        url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
+        image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
+        publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+        modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+      }
+    ],
+    [
+      'vuepress-plugin-medium-zoom',
+      {
+        selector: '.my-img',
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+        },
+      }
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'theorem',
+        before: info => `<div class="theorem"><p class="title">${info}</p>`,
+        after: '</div>',
+      },
+    ],
+  ],
   themeConfig: {
     // 導航欄 Logo
     // logo: '/assets/img/logo.png',
@@ -36,11 +66,6 @@ module.exports = {
       // {text: '關於我', link: '/'}
     ],
     // 側邊欄配置
-    // sidebar: [
-    //   ['', '基礎'],
-    //   ['/', '內容簡介'],
-    //   ['/test', '測試']
-    // ],
     sidebar: [
       {
         title: 'Javascript 基礎',
@@ -61,7 +86,7 @@ module.exports = {
         // 標題
         title: '六角學院 js 學徒特訓班試題',
         // 可選的, 標題的跳轉鏈接，應為絕對路徑且必須存在
-        // path: '/foo/',
+        // path: '/hexSchool/',
         // 可選的, 是否可展開，默認值是 true
         collapsable: true,
         // 可選的, 默認值是 1

@@ -13,7 +13,7 @@
 
 以街景來舉例原始型別內容
 
-<img src="/js-vue-press/image/street_view.jpg" />
+<img src="/js-vue-press/image/street_view.jpg" class="my-img" />
 
 以街景圖來說，有哪些東西值得被記錄起來？
 

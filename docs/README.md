@@ -38,6 +38,13 @@ Hello world
 Hello world
 :::
 
+::: theorem Hello world
+Hello world。
+
+::: right
+Hello world [Hello world](https://)
+:::
+
 ``` js {2}
 var helloWorld = "Hello world";
 console.log("Hello world");
