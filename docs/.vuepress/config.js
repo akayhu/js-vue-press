@@ -110,7 +110,8 @@ module.exports = {
           ['/hexSchool/level_fifteen', '第十五關：物件運用 - 資料與渲染分離'],
           ['/hexSchool/level_sixteen', '第十六關：forEach 與 HTML 字串累加'],
           ['/hexSchool/level_seventeen', '第十七關：innerHTML + forEach'],
-          ['/hexSchool/level_eighteen', '第十八關：字串相加 innerHTML + 樣式搭配']
+          ['/hexSchool/level_eighteen', '第十八關：字串相加 innerHTML + 樣式搭配'],
+          ['/hexSchool/level_nineteen', '第十九關：程式碼邏輯']
         ]
       },
       {

@@ -7,6 +7,8 @@ tags:
 
 # 第三關：變數型別判斷與弱型別轉型
 
+請觀看此[文章](https://ithelp.ithome.com.tw/articles/10190873)後，解答以下題目。
+
 ## 第一題
 
 請依序告知以下 console.log 會顯示什麼值。

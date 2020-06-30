@@ -5,6 +5,12 @@ tags:
 
 # 第四關：比較運算子
 
+請觀看以下文章後，解答以下題目
+
+* [[JS] 判斷筆記](https://medium.com/%E9%A6%AC%E6%A0%BC%E8%95%BE%E7%89%B9%E7%9A%84%E5%86%92%E9%9A%AA%E8%80%85%E6%97%A5%E8%AA%8C/js-%E5%88%A4%E6%96%B7%E7%AD%86%E8%A8%98-%E9%81%8B%E7%AE%97%E5%AD%90-if-switch-a9f5e535835b)
+* [比較運算子](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Obsolete_Pages/Obsolete_Pages/Obsolete_Pages/%E9%81%8B%E7%AE%97%E5%AD%90/%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90)
+* [重新認識 JavaScript: Day 07 「比較」與自動轉型的規則](https://ithelp.ithome.com.tw/articles/10191254)
+
 請依序告知以下 console.log 會顯示什麼值，若不知道答案，可將 code 貼在 chrome console 來顯示後，再回頭補知識點。
 
 ## 第一題
