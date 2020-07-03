@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自動化上傳部署：Travis CI | Akay Hu Javascript 筆記部落格</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Akay Hu 的 Javascript 筆記部落格">
+    <meta property="article:modified_time" content="2020-06-29T07:46:18.000Z">
+    <meta property="og:site_name" content="Akay Hu Javascript 筆記部落格">
+    <meta property="og:title" content="自動化上傳部署：Travis CI">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/toolKit/travis.html">
+    <meta name="twitter:title" content="自動化上傳部署：Travis CI">
+    <meta name="twitter:url" content="/toolKit/travis.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/js-vue-press/assets/css/0.styles.92e4794e.css" as="style"><link rel="preload" href="/js-vue-press/assets/js/app.55c39726.js" as="script"><link rel="preload" href="/js-vue-press/assets/js/2.5228ce84.js" as="script"><link rel="preload" href="/js-vue-press/assets/js/38.1fa2ebad.js" as="script"><link rel="prefetch" href="/js-vue-press/assets/js/10.33e1cbd3.js"><link rel="prefetch" href="/js-vue-press/assets/js/11.d9e5f077.js"><link rel="prefetch" href="/js-vue-press/assets/js/12.8c4d3b52.js"><link rel="prefetch" href="/js-vue-press/assets/js/13.7759a836.js"><link rel="prefetch" href="/js-vue-press/assets/js/14.fd71977e.js"><link rel="prefetch" href="/js-vue-press/assets/js/15.2f196833.js"><link rel="prefetch" href="/js-vue-press/assets/js/16.bf1945a8.js"><link rel="prefetch" href="/js-vue-press/assets/js/17.8f477db8.js"><link rel="prefetch" href="/js-vue-press/assets/js/18.ec63daa4.js"><link rel="prefetch" href="/js-vue-press/assets/js/19.82be622e.js"><link rel="prefetch" href="/js-vue-press/assets/js/20.63c32d2e.js"><link rel="prefetch" href="/js-vue-press/assets/js/21.d0925387.js"><link rel="prefetch" href="/js-vue-press/assets/js/22.ecb514de.js"><link rel="prefetch" href="/js-vue-press/assets/js/23.43b40f6f.js"><link rel="prefetch" href="/js-vue-press/assets/js/24.20801372.js"><link rel="prefetch" href="/js-vue-press/assets/js/25.60c1442c.js"><link rel="prefetch" href="/js-vue-press/assets/js/26.699a0e56.js"><link rel="prefetch" href="/js-vue-press/assets/js/27.8fba0162.js"><link rel="prefetch" href="/js-vue-press/assets/js/28.fd8937a0.js"><link rel="prefetch" href="/js-vue-press/assets/js/29.acdd79a3.js"><link rel="prefetch" href="/js-vue-press/assets/js/3.c4f4a85a.js"><link rel="prefetch" href="/js-vue-press/assets/js/30.33030381.js"><link rel="prefetch" href="/js-vue-press/assets/js/31.18b0d6a0.js"><link rel="prefetch" href="/js-vue-press/assets/js/32.91cb05ef.js"><link rel="prefetch" href="/js-vue-press/assets/js/33.ba79fc92.js"><link rel="prefetch" href="/js-vue-press/assets/js/34.c2ea8399.js"><link rel="prefetch" href="/js-vue-press/assets/js/35.31db5bd4.js"><link rel="prefetch" href="/js-vue-press/assets/js/36.2c0e6ba4.js"><link rel="prefetch" href="/js-vue-press/assets/js/37.b70d46a3.js"><link rel="prefetch" href="/js-vue-press/assets/js/39.0eabd317.js"><link rel="prefetch" href="/js-vue-press/assets/js/4.6e00dbef.js"><link rel="prefetch" href="/js-vue-press/assets/js/40.ab4538c4.js"><link rel="prefetch" href="/js-vue-press/assets/js/5.b8c8f837.js"><link rel="prefetch" href="/js-vue-press/assets/js/6.39a327b8.js"><link rel="prefetch" href="/js-vue-press/assets/js/7.7e618f9e.js"><link rel="prefetch" href="/js-vue-press/assets/js/8.96bdc28d.js"><link rel="prefetch" href="/js-vue-press/assets/js/9.6dac5e0b.js">
+    <link rel="stylesheet" href="/js-vue-press/assets/css/0.styles.92e4794e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/js-vue-press/" class="home-link router-link-active"><!----> <span class="site-name">Akay Hu Javascript 筆記部落格</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/js-vue-press/" class="nav-link">
+  首頁
+</a></div><div class="nav-item"><a href="https://www.hexschool.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  六角學院
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/js-vue-press/" class="nav-link">
+  首頁
+</a></div><div class="nav-item"><a href="https://www.hexschool.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  六角學院
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript 基礎</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>六角學院 js 學徒特訓班試題</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>工具、套件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js-vue-press/toolKit/vscode.html" class="sidebar-link">程式碼編輯器： VSCode</a></li><li><a href="/js-vue-press/toolKit/slack.html" class="sidebar-link">團隊溝通平台：Slack</a></li><li><a href="/js-vue-press/toolKit/travis.html" aria-current="page" class="active sidebar-link">自動化上傳部署：Travis CI</a></li><li><a href="/js-vue-press/toolKit/liveServer.html" class="sidebar-link">開發本地服務器：Live Server</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="自動化上傳部署：travis-ci"><a href="#自動化上傳部署：travis-ci" class="header-anchor">#</a> 自動化上傳部署：Travis CI</h1> <p>待補</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新:</span> <span class="time">6/29/2020, 3:46:18 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js-vue-press/toolKit/slack.html" class="prev">
+        團隊溝通平台：Slack
+      </a></span> <span class="next"><a href="/js-vue-press/toolKit/liveServer.html">
+        開發本地服務器：Live Server
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/js-vue-press/assets/js/app.55c39726.js" defer></script><script src="/js-vue-press/assets/js/2.5228ce84.js" defer></script><script src="/js-vue-press/assets/js/38.1fa2ebad.js" defer></script>
+  </body>
+</html>

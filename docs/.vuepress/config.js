@@ -126,10 +126,6 @@ module.exports = {
           ['/toolKit/liveServer', '開發本地服務器：Live Server']
         ]
       }
-      // {
-      //   title: 'Group 2',
-      //   children: [ /* ... */ ]
-      // }
     ],
     // 頁面滾動
     smoothScroll: true,
