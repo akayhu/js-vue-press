@@ -1,39 +1,22 @@
-# 第二十一關：BMI 追加功能
+## 二十二關：陣列調整
 
 ::: theorem 情境：
-經由六角學院特訓班的努力，終於讓小杰度過難關，雖然如此，**院長卻坳小杰再做一個功能**。
+儘管小杰即將寫完平均 BMI 的功能，但他看著 Code，總覺得還可以優化得更好，儘管不是院長與護理師的需求，最後他還是打算把這段 Code 寫完，再來提交給他們，
 
-小杰：「這樣太超過了啦！哪有人這樣加功能！」<br />
-護理師：「相信我，院長這樣已經很仁慈了，真正的業界隨時變更需求、隨時加減功能只是家常便飯。」
-
-小杰：「那如果我不做的話你們怎麼辦？我師父早就辦出院啦~ (拿翹」<br />
-護理師：「所以你的意思是，**你以後永遠也不會生病，永遠也不會身體出狀況，然後我們收到你這病患時，我們就可以置之不—**」
-
-小杰：「慢著，我決定還是幫院長最後這個忙，看我的吧！」
+一起來看看小杰糾結什麼功能吧！
 :::
 
-## 問題
+## 題目
 
-可憐的小杰又被威脅了，原來院長想要統計每次 BMI 測量的總平均值，一起做完這最後的需求，讓小杰順利離開醫院吧！
+### 最新的資料放在第一筆
 
-<img src="https://i.imgur.com/oCoeoR7.png" />
+如下圖，第四筆資料是小杰用陣列的 push 來輸入第四次資料，最後顯示到最下方，**但照理來說，最新的資料應該放到第一筆上才對**，請思考如何處理陣列，讓最新資料都能排序在最前面，將資料進行反轉。
 
-## 設計稿釋出
+小杰依稀想到，陣列除了 push 外，好像還有 `unshift`、`reverse`等等的方式好像可以處理他的問題。於是他開啟了 Google ，開始展開全面性搜尋。
 
-* [UI 設計稿](https://xd.adobe.com/view/15a8510e-e4c9-45d7-4f71-24d75d4e54fd-6399/)
-* [上面連結的 XD 線上標示稿操作教學](https://hackmd.io/35ILOuVGSAO8GeO0xevTxw?both)
+請在 Slack 提供 Codepen 時，也分享你用了哪一招來處理這問題。
 
-### 版型提供
-如果你只想鍛鍊 JS 邏輯，可以挑選以下的程式碼複製起來，
-
-- [HexSchool-BMI (Eden Hsia)](https://github.com/Edenhsia/hexSchool-BMI)
-- [HexSchool-BMI (Vic)](https://codepen.io/hsuan333/pen/XWXRQYY)
-- [HexSchool-BMI (Tim Chen)](https://github.com/timchen0607/HexSchool-BMI) [Demo](https://timchen0607.github.io/HexSchool-BMI/)
-- [HexSchool-BMI (hsin-yu)](https://codepen.io/tina2793778/pen/jOWwbRP?editors=1100)
-- [HexSchool-BMI (Erica)](https://codepen.io/kaoru44689/pen/gOPRWGm)
-- [HexSchool-BMI (Jason Hung)](https://github.com/brook110413/hexSchool-BMI) [Demo](https://brook110413.github.io/hexSchool-BMI/)
-- [HexSchool-BMI (Leo Lee)](https://github.com/overactive1988/HexSchool_BMI_Calculator)
-- [HexSchool-BMI (Tim Hsu)](https://codepen.io/tim_hsu/pen/rNxYzyO)
+<img src="https://i.imgur.com/bZkQ24r.png" />
 
 ::: tip 參考解答：
 ``` html
@@ -226,11 +209,11 @@ function calculationBMI(e) {
 	}
 	height.value = "";
 	kg.value = "";
-	sum(bmi);
+  sum(bmi);
 }
 
 function addData(status, bmiText) {
-	data.push({
+	data.unshift({
 		height: height.value,
 		kg: kg.value,
 		bmi: bmiText,
@@ -241,12 +224,12 @@ function addData(status, bmiText) {
 }
 
 function reset(e) {
-	e.preventDefault();
-	data = [];
-	totalBmi = 0;
-	averageBmi = 0;
-	display();
-	record.style.display = "none";
+  e.preventDefault();
+  data = [];
+  totalBmi = 0;
+  averageBmi = 0;
+  display();
+  record.style.display = "none";
 }
 
 function sum(bmi) {
@@ -280,5 +263,5 @@ resetBtn.addEventListener("click", reset);
 :::
 
 ::: warning 說明：
-js 寫法沒有唯一，可以正常執行動作即可
+unshift 替換掉原本的 push
 :::

@@ -113,7 +113,8 @@ module.exports = {
           ['/hexSchool/level_eighteen', '第十八關：字串相加 innerHTML + 樣式搭配'],
           ['/hexSchool/level_nineteen', '第十九關：程式碼邏輯'],
           ['/hexSchool/level_twenty', '第二十關：BMI 計算機團戰關卡'],
-          ['/hexSchool/level_twenty_one', '第二十一關：BMI 追加功能']
+          ['/hexSchool/level_twenty_one', '第二十一關：BMI 追加功能'],
+          ['/hexSchool/level_twenty_two', '第二十二關：陣列調整']
         ]
       },
       {
