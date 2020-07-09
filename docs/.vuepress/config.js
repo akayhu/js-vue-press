@@ -115,7 +115,8 @@ module.exports = {
           ['/hexSchool/level_twenty', '第二十關：BMI 計算機團戰關卡'],
           ['/hexSchool/level_twenty_one', '第二十一關：BMI 追加功能'],
           ['/hexSchool/level_twenty_two', '第二十二關：陣列調整'],
-          ['/hexSchool/level_twenty_three', '第二十三關：資料格式處理，陣列 unshift']
+          ['/hexSchool/level_twenty_three', '第二十三關：資料格式處理，陣列 unshift'],
+          ['/hexSchool/level_twenty_four', '第二十四關：資料格式處理，forEach + 陣列處理']
         ]
       },
       {
