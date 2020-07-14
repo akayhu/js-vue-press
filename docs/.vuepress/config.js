@@ -118,7 +118,8 @@ module.exports = {
           ['/hexSchool/level_twenty_three', '第二十三關：資料格式處理，陣列 unshift'],
           ['/hexSchool/level_twenty_four', '第二十四關：資料格式處理，forEach + 陣列處理'],
           ['/hexSchool/level_twenty_five', '第二十五關：資料格式處理，forEach + 陣列處理'],
-          ['/hexSchool/level_twenty_six', '第二十六關：AJAX、Axios']
+          ['/hexSchool/level_twenty_six', '第二十六關：AJAX、Axios'],
+          ['/hexSchool/level_twenty_seven', '第二十七關：陣列補充觀念']
         ]
       },
       {
