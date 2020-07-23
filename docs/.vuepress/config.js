@@ -120,7 +120,10 @@ module.exports = {
           ['/hexSchool/level_twenty_five', '第二十五關：資料格式處理，forEach + 陣列處理'],
           ['/hexSchool/level_twenty_six', '第二十六關：AJAX、Axios'],
           ['/hexSchool/level_twenty_seven', '第二十七關：陣列補充觀念'],
-          ['/hexSchool/level_twenty_eight', '第二十八關：陣列排序進度']
+          ['/hexSchool/level_twenty_eight', '第二十八關：陣列排序進度'],
+          ['/hexSchool/level_twenty_nine', '第二十九關：監聽切換排序功能'],
+          ['/hexSchool/level_thirty', '第三十關：C3.js 圖表整合'],
+          ['/hexSchool/level_thirty_one', '第三十一關：部落格文章閱讀']
         ]
       },
       {
