@@ -123,7 +123,16 @@ module.exports = {
           ['/hexSchool/level_twenty_eight', '第二十八關：陣列排序進度'],
           ['/hexSchool/level_twenty_nine', '第二十九關：監聽切換排序功能'],
           ['/hexSchool/level_thirty', '第三十關：C3.js 圖表整合'],
-          ['/hexSchool/level_thirty_one', '第三十一關：部落格文章閱讀']
+          ['/hexSchool/level_thirty_one', '第三十一關：部落格文章閱讀'],
+          ['/hexSchool/level_thirty_two', '第三十二關：程式整合篇'],
+          ['/hexSchool/level_thirty_three', '第三十三關：圓餅圖分析'],
+          ['/hexSchool/level_thirty_four', '第三十四關：圓餅圖分析'],
+          ['/hexSchool/level_thirty_five', '第三十五關：圓餅圖與長條圖合併使用'],
+          ['/hexSchool/level_thirty_six', '第三十六關：ES6 起步走 - Template String 樣板字串'],
+          ['/hexSchool/level_thirty_seven', '第三十七關：let、const'],
+          ['/hexSchool/level_thirty_eight', '第三十八關：let 與 const 觀念複習'],
+          ['/hexSchool/level_thirty_nine', '第三十九關：箭頭函式(arrow function)'],
+          ['/hexSchool/level_forty', '第四十關：ES6 團戰關卡']
         ]
       },
       {
