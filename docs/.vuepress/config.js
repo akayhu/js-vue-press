@@ -126,7 +126,7 @@ module.exports = {
           ['/hexSchool/level_thirty_one', '第三十一關：部落格文章閱讀'],
           ['/hexSchool/level_thirty_two', '第三十二關：程式整合篇'],
           ['/hexSchool/level_thirty_three', '第三十三關：圓餅圖分析'],
-          ['/hexSchool/level_thirty_four', '第三十四關：圓餅圖分析'],
+          ['/hexSchool/level_thirty_four', '第三十四關：圓餅圖分析(中文字串判別)'],
           ['/hexSchool/level_thirty_five', '第三十五關：圓餅圖與長條圖合併使用'],
           ['/hexSchool/level_thirty_six', '第三十六關：ES6 起步走 - Template String 樣板字串'],
           ['/hexSchool/level_thirty_seven', '第三十七關：let、const'],
