@@ -132,7 +132,12 @@ module.exports = {
           ['/hexSchool/level_thirty_seven', '第三十七關：let、const'],
           ['/hexSchool/level_thirty_eight', '第三十八關：let 與 const 觀念複習'],
           ['/hexSchool/level_thirty_nine', '第三十九關：箭頭函式(arrow function)'],
-          ['/hexSchool/level_forty', '第四十關：ES6 團戰關卡']
+          ['/hexSchool/level_forty', '第四十關：ES6 團戰關卡'],
+          ['/hexSchool/forty_one', '第四十一關：new Date() 時間處理'],
+          ['/hexSchool/forty_two', '第四十二關：new Date() 與字串處理'],
+          ['/hexSchool/forty_three', '第四十三關：你熟悉 GitHub Pages 嗎？'],
+          ['/hexSchool/forty_four', '第四十四關：window.location'],
+          ['/hexSchool/forty_five_forty_six', '第四十五、四十六關：window.location']
         ]
       },
       {
